@@ -1,0 +1,61 @@
+
+.form{
+    padding: 24px;
+    > .inputContainer{
+        display: flex;
+        align-items: center;
+       > .labelContainer{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 150px;
+            height: 80px;
+            > .label{
+                text-decoration: underline;
+                color: green;
+                height: min-content;
+            }
+        }
+    
+        > .emailListContainer{
+            display: block;
+        }
+    
+        
+        > .input{
+            margin-left: 18px;
+            height: 18px;
+            margin: auto 18px auto 0;
+        }
+    
+    
+        > .button{
+            height: 24px;
+        }
+    }
+}
+
+
+
+
+.inputFile{
+    margin-top: 40px;
+    width: 100%;
+
+    + .submitButtonContainer > .button{
+        background-color: green;
+        height: 40px;
+        width: 80px;
+        margin: 0 auto;
+    }
+}
+
+.submitButtonContainer{
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+}
+
+.title{
+    margin-left: 24px;
+}
