@@ -9,6 +9,8 @@ RUN npm install
 
 COPY . ./
 
-CMD ["npm", "start"]
+RUN npm run webpack:build
+
+CMD npm run serve
 
 # EXPOSE 3000

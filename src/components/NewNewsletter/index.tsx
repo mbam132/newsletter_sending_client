@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import axios from 'axios'
 import styles from './index.module.scss'
+import Button from 'react-bootstrap/Button';
+import classNames from 'classnames';
 
 function NewNewsletter(){
     const [name, setName] = useState('')
@@ -78,9 +80,9 @@ function NewNewsletter(){
                         <label htmlFor="name" className={styles.label}> Email list </label>
                     </div>
                     <input type="text" id="name" value={currentInputEmail} onChange={currentInputEmailChanged} className={styles.input} />
-                    <button type='button' onClick={addToEmailList} className={styles.button}>
+                    <Button type='button' onClick={addToEmailList} className={classNames(styles.button, 'px-1')}>
                         Add email
-                    </button>
+                    </Button>
                 </div>
                 <div className={styles.emailListContainer}>
                     {emailList.map((elem)=>(<p> {elem}</p>))}
@@ -93,9 +95,7 @@ function NewNewsletter(){
                 />
 
                 <div className={styles.submitButtonContainer}>
-                    <button type="submit" className={styles.button}>
-                    Submit
-                    </button>
+                    <Button className="mx-auto" type="submit">Submit</Button>
                 </div>
             </form>
 
