@@ -1,0 +1,13 @@
+@keyframes move {
+    from { margin-left: 0;}
+    to { margin-left: 300px;}
+}
+
+.spinner{
+    animation-name: move;
+    animation-duration: 2s;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-iteration-count: infinite;
+}
