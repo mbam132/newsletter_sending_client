@@ -6,6 +6,9 @@ import NewsletterList from '../../components/NewsletterList/index'
 function Homepage (): JSX.Element {
   const [displayFirstView, setDisplayFirstView] = useState(true)
 
+
+
+  
   return (
     <div>
       <Navbar setDisplayFirstView={setDisplayFirstView} />
