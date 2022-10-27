@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard-with-typescript"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+              },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+    },
+    "ignorePatterns": ["*.json", "*.css", "*.scss", "*.module.scss",
+        "*.md", "*.html", "/build", "/dist", "Dockerfile", "docker-compose.yml",
+        "/public"]
+}

@@ -1,21 +1,27 @@
 import React from 'react'
-import styles from './index.module.scss'
-import Button from 'react-bootstrap/Button';
-import classNames from 'classnames';
+import Button from 'react-bootstrap/Button'
+// import styles from './index.module.scss'
 
-function Navbar({setDisplayFirstView}) {
+interface Props {
+  setDisplayFirstView: (value: boolean) => void
+}
+
+function Navbar ({ setDisplayFirstView }: Props): JSX.Element {
   return (
-    <div className={classNames(styles.container, 'mt-2 mb-3')}>
-      <Button onClick={()=>{
-        setDisplayFirstView(true)
-      }}
-      className='me-5 ms-3'
-      >Create news letter
+    <div className='mt-2 mb-3'>
+      <Button
+        onClick={() => {
+          setDisplayFirstView(true)
+        }}
+        className="me-5 ms-3"
+      >
+        Create news letter
       </Button>
-      <Button onClick={()=>{
+      <Button onClick={() => {
         setDisplayFirstView(false)
       }}
-      >Send news letter
+      >
+        Send news letter
       </Button>
     </div>
   )
