@@ -4,12 +4,9 @@ jobs:
   project:
     runs-on: ubuntu-latest
     steps:
-      - 
-        name: Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v3
-      -
-        name: Install libraries
+      - name: Install libraries
         run: npm i -D
-      - 
-        name: Run ESLint
+      - name: Run ESLint
         run: npm run lint

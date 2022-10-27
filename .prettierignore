@@ -1,0 +1,8 @@
+coverage
+
+*.tsx
+*.ts
+*.js
+
+/build
+/.vscode

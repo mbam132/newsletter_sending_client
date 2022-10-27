@@ -1,27 +1,26 @@
-.container{
-    margin-top: 16px;
+.container {
+  margin-top: 16px;
 
-    > .title{
-        margin-left: 24px;
-    }
+  > .title {
+    margin-left: 24px;
+  }
 }
 
-.elemContainer{
-    display: flex;
-    justify-content: space-between;
-    background-color: green;
-    width: 300px;
-    padding: 12px;
-    border-radius: 8px;
-    margin: 0 auto 16px
+.elemContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+  width: 300px;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 0 auto 16px;
 }
 
-.button{
-    height: 25px;
-    margin: auto 0;
+.button {
+  height: 25px;
+  margin: auto 0;
 
-    &:hover{
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
-

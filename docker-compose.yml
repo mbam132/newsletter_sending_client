@@ -2,5 +2,5 @@ services:
   app:
     container_name: nws_let_send_client
     build: .
-    ports: 
+    ports:
       - "3000:3000"
